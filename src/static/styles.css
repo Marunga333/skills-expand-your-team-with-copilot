@@ -710,6 +710,8 @@ footer {
 .share-button.facebook {
   background-color: #1877F2;
   color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .share-button.linkedin {

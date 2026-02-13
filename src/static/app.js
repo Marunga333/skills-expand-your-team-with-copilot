@@ -561,9 +561,9 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       <div class="share-buttons">
         <span class="share-label">Share:</span>
-        <a href="${twitterUrl}" target="_blank" rel="noopener noreferrer" class="share-button twitter" title="Share on Twitter">𝕏</a>
-        <a href="${facebookUrl}" target="_blank" rel="noopener noreferrer" class="share-button facebook" title="Share on Facebook">f</a>
-        <a href="${linkedinUrl}" target="_blank" rel="noopener noreferrer" class="share-button linkedin" title="Share on LinkedIn">in</a>
+        <a href="${twitterUrl}" target="_blank" rel="noopener noreferrer" class="share-button twitter" title="Share on Twitter" aria-label="Share ${name} on Twitter">𝕏</a>
+        <a href="${facebookUrl}" target="_blank" rel="noopener noreferrer" class="share-button facebook" title="Share on Facebook" aria-label="Share ${name} on Facebook">f</a>
+        <a href="${linkedinUrl}" target="_blank" rel="noopener noreferrer" class="share-button linkedin" title="Share on LinkedIn" aria-label="Share ${name} on LinkedIn">in</a>
       </div>
       <div class="activity-card-actions">
         ${
