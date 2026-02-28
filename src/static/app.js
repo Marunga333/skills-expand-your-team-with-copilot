@@ -555,6 +555,13 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     `;
 
+    // Generate social sharing links
+    const shareText = `Check out this activity at Mergington High School: ${name}`;
+    const shareUrl = window.location.href;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`;
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
+    const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
+
     activityCard.innerHTML = `
       ${tagHtml}
       ${difficultyBadgeHtml}
@@ -588,6 +595,12 @@ document.addEventListener("DOMContentLoaded", () => {
             )
             .join("")}
         </ul>
+      </div>
+      <div class="share-buttons">
+        <span class="share-label">Share:</span>
+        <a href="${twitterUrl}" target="_blank" rel="noopener noreferrer" class="share-button twitter" title="Share on Twitter" aria-label="Share ${name} on Twitter">𝕏</a>
+        <a href="${facebookUrl}" target="_blank" rel="noopener noreferrer" class="share-button facebook" title="Share on Facebook" aria-label="Share ${name} on Facebook">f</a>
+        <a href="${linkedinUrl}" target="_blank" rel="noopener noreferrer" class="share-button linkedin" title="Share on LinkedIn" aria-label="Share ${name} on LinkedIn">in</a>
       </div>
       <div class="activity-card-actions">
         ${
